@@ -45,5 +45,4 @@ foreach ($items as $key => $item) : ?>
   print_r(json_encode([$key => $item], JSON_UNESCAPED_UNICODE));
 }
 
-//session_destroy();
 ?>

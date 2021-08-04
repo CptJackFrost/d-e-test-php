@@ -64,7 +64,7 @@ echo HowManyBetween(180, 10)."<br />";
 echo HowManyBetween(180, '10')."<br />";
 
 // 5 задача
-
+// не сработает с дробными или отрицательными значениями
 function calculateProducts($mass) {
   $result = "";
   $quantity = floor($mass / 7);
