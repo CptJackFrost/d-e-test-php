@@ -29,7 +29,7 @@ echo $days[$lang][$day - 1]."<br />"; //ожидается Вс
 
 function checkFunc ($var) {
   $result = "false";
-  if (is_int($var) || is_bool($var)){
+  if (is_int($var) || is_float($var)){
     if ($var > 170) {
       $result = "Big";
     } else if ($var < 170) {
@@ -48,7 +48,7 @@ echo checkFunc('180')."<br />";
 
 function HowManyBetween ($first, $second) {
   try {
-    if (!((is_int($first) || is_bool($first)) && (is_int($second) || is_bool($second)))) {
+    if (!((is_int($first) || is_float($first)) && (is_int($second) || is_float($second)))) {
       throw new Exception;
     } else {
       $result = abs($first - $second);
